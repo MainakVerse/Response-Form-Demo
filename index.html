@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Risk Assessment</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.5;
+            background-color: #f4f4f4;
+            padding: 25px;
+        }
+
+        h2 {
+            color: #228B22;
+            text-align: center;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        fieldset {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        legend {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #333;
+            padding: 0 10px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+
+        button:hover {
+            background-color: #367c39;
+        }
+    </style>
+</head>
+<body>
+    <h2>Health Risk Assessment Form</h2>
+    <form action="https://script.google.com/macros/s/AKfycbxiAbq_u0NBCzvfMAcsEh6YG-XviZffvT7KX2m64U0GbMIFY6U1aR68uBbuffIBe0C4LA/exec" method="POST">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label>Gender:</label><br>
+            <input type="radio" name="Gender" value="Male" required> Male
+            <input type="radio" name="Gender" value="Female" required> Female
+            <input type="radio" name="Gender" value="Other" required> Other
+            <br><br>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Health Conditions</legend>
+            <label>Chain Smoker:</label>
+            <input type="radio" name="Chain_smoker" value="Yes" required> Yes
+            <input type="radio" name="Chain_smoker" value="No" required> No
+            <br><br>
+
+            <label>Consumes Other Tobacco Products:</label>
+            <input type="radio" name="Consumes_other_tobacco_products" value="Yes" required> Yes
+            <input type="radio" name="Consumes_other_tobacco_products" value="No" required> No
+            <br><br>
+
+            <label>High Blood Pressure (High BP):</label>
+            <input type="radio" name="HighBP" value="Yes" required> Yes
+            <input type="radio" name="HighBP" value="No" required> No
+            <br><br>
+
+            <label>Obese:</label>
+            <input type="radio" name="Obese" value="Yes" required> Yes
+            <input type="radio" name="Obese" value="No" required> No
+            <br><br>
+
+            <label>Diabetes:</label>
+            <input type="radio" name="Diabetes" value="Yes" required> Yes
+            <input type="radio" name="Diabetes" value="No" required> No
+            <br><br>
+
+            <label>Metabolic Syndrome:</label>
+            <input type="radio" name="Metabolic_syndrome" value="Yes" required> Yes
+            <input type="radio" name="Metabolic_syndrome" value="No" required> No
+            <br><br>
+
+            <label>Use of Stimulant Drugs:</label>
+            <input type="radio" name="Use_of_stimulant_drugs" value="Yes" required> Yes
+            <input type="radio" name="Use_of_stimulant_drugs" value="No" required> No
+            <br><br>
+
+            <label>Family History:</label>
+            <input type="radio" name="Family_history" value="Yes" required> Yes
+            <input type="radio" name="Family_history" value="No" required> No
+            <br><br>
+
+            <label>History of Preeclampsia:</label>
+            <input type="radio" name="History_of_preeclampsia" value="Yes" required> Yes
+            <input type="radio" name="History_of_preeclampsia" value="No" required> No
+            <br><br>
+
+            <label>CABG History:</label>
+            <input type="radio" name="CABG_history" value="Yes" required> Yes
+            <input type="radio" name="CABG_history" value="No" required> No
+            <br><br>
+
+            <label>Respiratory Illness:</label>
+            <input type="radio" name="Respiratory_illness" value="Yes" required> Yes
+            <input type="radio" name="Respiratory_illness" value="No" required> No
+            <br><br>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Risk Assessment</legend>
+            <label>Under Risk:</label>
+            <input type="radio" name="UnderRisk" value="Yes" required> Yes
+            <input type="radio" name="UnderRisk" value="No" required> No
+            <br><br>
+        </fieldset>
+        
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
